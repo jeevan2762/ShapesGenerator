@@ -1,7 +1,22 @@
 .App {
 	text-align: center;
+}
 
-	button {
-		font-weight: bold;
-	}
+.circle{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	height: 110px;
+	width: 110px;
+	border-radius: 70px;
+	border: 2px solid black;
+}
+
+.square{
+	position: absolute;
+	top: 118px;
+	left: 117px;
+	height: 75px;
+	width: 75px;
+	border: 2px solid black;
 }
