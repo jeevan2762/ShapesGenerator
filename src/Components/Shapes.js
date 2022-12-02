@@ -1,11 +1,11 @@
 import { React } from 'react';
+import Circle from './Circle';
 import Square from './Square';
-import Round from './Round';
 
 const Shapes = () =>
 	<div>
 		<Square/>
-		<Round/>
+		<Circle/>
 	</div>;
 
 export default Shapes;

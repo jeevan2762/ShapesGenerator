@@ -1,5 +1,5 @@
 import { React } from 'react';
-import Shapes from '../Components/Shapes';
+import Shapes from './Components/Shapes';
 import './App.scss';
 
 const App = () =>
