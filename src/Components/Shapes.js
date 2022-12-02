@@ -1,8 +1,11 @@
 import { React } from 'react';
 import Square from './Square';
 
-const Shapes = () =>
-	<div className="circle">
+const topValue = 500;
+const leftValue = 300;
+
+const Shapes = ({ top = topValue, left = leftValue }) =>
+	<div className="circle" style={ { top: `${ top }px`, left: `${ left }px` } }>
 		<Square/>
 	</div>;
 
