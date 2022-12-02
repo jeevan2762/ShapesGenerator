@@ -1,12 +1,22 @@
 import { React } from 'react';
 import Square from './Square';
 
-const topValue = 500;
-const leftValue = 300;
+const Shapes = ({ config, multiplier = 1 }) => {
+	const { dimensions: { circle: { top, left, height, width }}} = config;
 
-const Shapes = ({ top = topValue, left = leftValue }) =>
-	<div className="circle" style={ { top: `${ top }px`, left: `${ left }px` } }>
-		<Square/>
-	</div>;
+	return (
+		<div
+			className="circle"
+			style={ {
+				top: `${ top * multiplier }px`,
+				left: `${ left * multiplier }px`,
+				width: `${ width * multiplier }px`,
+				height: `${ height * multiplier }px`,
+			} }
+		>
+			<Square { ...{ ...config, multiplier } }/>
+		</div>
+	);
+};
 
 export default Shapes;
