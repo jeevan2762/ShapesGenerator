@@ -6,8 +6,8 @@ const multiplier = 2;
 
 const App = (context) =>
 	<div className="App" role="App">
-		<Shapes{ ...context }/>
-		<Shapes{ ...{ ...context, multiplier } }/>
+		<Shapes { ...context }/>
+		<Shapes { ...{ ...context, multiplier } }/>
 	</div>;
 
 export default App;
